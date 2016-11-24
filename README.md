@@ -40,3 +40,10 @@ Separate project by modules, for example `Login`, `Settings`, etc. For each modu
 Use autolayout for relatively static content. If content is very dynamic consider to manually caluclate sizes and frames of views (`UIView.layoutSubviews` and `UIViewController.viewDidLayoutSubviews` is the best place for this)
 
 Prefer to not place all views in one big view or view controller, separate them by functionality for future reusability.
+
+## Libraries and Frameworks We Use
+
+- Alamofire for swift projects https://github.com/Alamofire/Alamofire
+- AFNetworking for objective-c projects https://github.com/AFNetworking/AFNetworking
+- TPKeyboardAvoiding https://github.com/michaeltyson/TPKeyboardAvoiding
+- ZipArchive https://github.com/ZipArchive/ZipArchive
