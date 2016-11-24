@@ -39,9 +39,11 @@ You can place common files/classes that are used by many modules in separate fol
 
 ## Autolayout
 
-Use autolayout for relatively static content. If content is very dynamic consider to manually caluclate sizes and frames of views (`UIView.layoutSubviews` and `UIViewController.viewDidLayoutSubviews` is the best place for this)
+Use autolayout for relatively static content. If content is very dynamic consider to manually caluclate and set sizes and frames of views (`UIView.layoutSubviews` and `UIViewController.viewDidLayoutSubviews` is the best place for this)
 
-Prefer to not place all views in one big view or view controller, separate them by functionality for future reusability.
+Prefer to not place all views in one big view or view controller, separate them by functionality and move them in their own xib for future reusability.
+
+Don't use autolayout to postiion views inside a scroll view in a xib or a storyboard. It's very buggy, hard to change and understand. For such cases you should layout views manually or use a table view instead.
 
 ## Libraries and Frameworks We Use
 
