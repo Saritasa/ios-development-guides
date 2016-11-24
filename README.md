@@ -14,6 +14,8 @@ Let's use the apple's official api design guidelines https://swift.org/documenta
 
 Let's use swift community best practices https://github.com/schwa/Swift-Community-Best-Practices
 
+Also take a look at our [commit style](commit-style.md)
+
 ## Project Folder Structure
 
 ```
