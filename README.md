@@ -8,7 +8,7 @@ Let's use the apple's official api design guidelines https://swift.org/documenta
 
 - enable "Automatically trim trailing whitespace" (Text Editing > Editing > While edititng)
 - 4 spaces, not tabs (Text Editing > Indentation)
-- use `swiftlint` https://github.com/realm/SwiftLint
+- use `swiftlint` https://github.com/realm/SwiftLint (you can use [.swiftlint.yml](.swiftlint.yml) as basic template)
 
 ## Best Practices
 
