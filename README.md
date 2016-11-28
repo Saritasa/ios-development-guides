@@ -55,3 +55,5 @@ Don't use autolayout to postition views inside a scroll view in a xib or a story
 - AFNetworking for objective-c projects https://github.com/AFNetworking/AFNetworking
 - TPKeyboardAvoiding https://github.com/michaeltyson/TPKeyboardAvoiding
 - ZipArchive https://github.com/ZipArchive/ZipArchive
+- AlecrimCoreData https://github.com/Alecrim/AlecrimCoreData
+- MBProgressHUD https://github.com/matej/MBProgressHUD
