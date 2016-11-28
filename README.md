@@ -10,6 +10,11 @@ Let's use the apple's official api design guidelines https://swift.org/documenta
 - 4 spaces, not tabs (Text Editing > Indentation)
 - use `swiftlint` https://github.com/realm/SwiftLint
 
+## SonarQube Style Guidelines
+
+Don't forget about SonarQube properties. We should add to exclusions:
+sonar.exclusions=Artifacts/\*\*,Application/ProjectName/Assets.xcassets/\*\*,Application/Pods/\*\*
+
 ## Best Practices
 
 Let's use swift community best practices https://github.com/schwa/Swift-Community-Best-Practices
