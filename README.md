@@ -10,11 +10,18 @@ Let's use the apple's official api design guidelines https://swift.org/documenta
 - 4 spaces, not tabs (Text Editing > Indentation)
 - use `swiftlint` https://github.com/realm/SwiftLint (you can use [.swiftlint.yml](.swiftlint.yml) as basic template)
 
+## SonarQube Style Guidelines
+
+Don't forget about SonarQube properties. We should add to exclusions:
+sonar.exclusions=Artifacts/\*\*,Application/ProjectName/Assets.xcassets/\*\*,Application/Pods/\*\*
+
 ## Best Practices
 
 Let's use swift community best practices https://github.com/schwa/Swift-Community-Best-Practices
 
 Also take a look at our [commit style](commit-style.md)
+
+Don't save commented code in your files. You can use Version Editor in Xcode to see the file's history.
 
 ## Project Folder Structure
 
@@ -54,3 +61,5 @@ Don't use autolayout to postition views inside a scroll view in a xib or a story
 - SwiftyJSON https://github.com/SwiftyJSON/SwiftyJSON
 - TPKeyboardAvoiding https://github.com/michaeltyson/TPKeyboardAvoiding
 - ZipArchive https://github.com/ZipArchive/ZipArchive
+- AlecrimCoreData https://github.com/Alecrim/AlecrimCoreData
+- MBProgressHUD https://github.com/matej/MBProgressHUD
