@@ -52,7 +52,7 @@ Use autolayout for relatively static content. If content is very dynamic conside
 
 Prefer to not place all views in one big view or view controller, separate them by functionality and move them in their own xib for future reusability.
 
-Don't use autolayout to postition views inside a scroll view in a xib or a storyboard. It's very buggy, hard to change and understand. For such cases you should layout views manually or use a stack view a table view instead.
+Don't use autolayout to postition views inside a scroll view in a xib or a storyboard. It's very buggy, hard to change and understand. For such cases you should layout views manually or use a stack view or a table view instead.
 
 ## Libraries and Frameworks We Use
 
