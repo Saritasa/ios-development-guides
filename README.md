@@ -21,6 +21,9 @@ Let's use swift community best practices https://github.com/schwa/Swift-Communit
 
 Also take a look at our [commit style](commit-style.md)
 
+If you have made a mistake in your commit message, you can fix it using this commad:
+git commit --amend -m "A new right comment"
+
 Don't save commented code in your files. You can use Version Editor in Xcode to see the file's history.
 
 ## Project Folder Structure
