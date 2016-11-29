@@ -8,7 +8,7 @@
 5. Capitalize the subject line
 6. Do not end the subject line with a period
 7. Use the body for explain what and why vs. how.
-8. If you have made a mistake in your commit message, you can fix it using the commad git commit --amend
+8. If you have made a mistake in your commit message, you can fix it using the command git commit --amend
 
 ### Examples
 ```
