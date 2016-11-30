@@ -15,11 +15,11 @@ Let's use the apple's official api design guidelines https://swift.org/documenta
 
 ## Objective-C Style Guidelines
 
- - use literals. For example:
-`@123` instead of `[NSNumber numberWithInt:123]`
-`@(someFloatValue)` instead of `[NSNumber numberWithFloat:someFloatValue]`
-`@{key: value}` instead of `[NSDictionary dictionaryWithObjectsAndKeys: value, key, nil]`
-`@[object1, object2, object3]` instead of `[NSArray arrayWithObjects:object1, object2, object3, nil]`
+ - use literals: <br>
+`@123` instead of `[NSNumber numberWithInt:123]` <br>
+`@(someFloatValue)` instead of `[NSNumber numberWithFloat:someFloatValue]` <br>
+`@{key: value}` instead of `[NSDictionary dictionaryWithObjectsAndKeys: value, key, nil]` <br>
+`@[object1, object2, object3]` instead of `[NSArray arrayWithObjects:object1, object2, object3, nil]` <br>
 
 ## SonarQube Style Guidelines
 
