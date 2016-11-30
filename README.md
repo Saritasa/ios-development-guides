@@ -13,7 +13,7 @@ Let's use the apple's official api design guidelines https://swift.org/documenta
 ## SonarQube Style Guidelines
 
 Don't forget about SonarQube properties. We should add to exclusions:
-sonar.exclusions=Artifacts/\*\*,Application/ProjectName/Assets.xcassets/\*\*,Application/Pods/\*\*
+`sonar.exclusions=Artifacts/\*\*,Application/ProjectName/Assets.xcassets/\*\*,Application/Pods/\*\*`
 
 ## Best Practices
 
