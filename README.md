@@ -8,7 +8,7 @@ Let's use the apple's official api design guidelines https://swift.org/documenta
 
 - enable "Automatically trim trailing whitespace" (Text Editing > Editing > While edititng)
 - 4 spaces, not tabs (Text Editing > Indentation)
-- use `swiftlint` https://github.com/realm/SwiftLint
+- use `swiftlint` https://github.com/realm/SwiftLint (you can use [.swiftlint.yml](.swiftlint.yml) as basic template)
 
 ## SonarQube Style Guidelines
 
@@ -52,12 +52,13 @@ Use autolayout for relatively static content. If content is very dynamic conside
 
 Prefer to not place all views in one big view or view controller, separate them by functionality and move them in their own xib for future reusability.
 
-Don't use autolayout to postition views inside a scroll view in a xib or a storyboard. It's very buggy, hard to change and understand. For such cases you should layout views manually or use a table view instead.
+Don't use autolayout to postition views inside a scroll view in a xib or a storyboard. It's very buggy, hard to change and understand. For such cases you should layout views manually or use a stack view or a table view instead.
 
 ## Libraries and Frameworks We Use
 
 - Alamofire for swift projects https://github.com/Alamofire/Alamofire
 - AFNetworking for objective-c projects https://github.com/AFNetworking/AFNetworking
+- SwiftyJSON https://github.com/SwiftyJSON/SwiftyJSON
 - TPKeyboardAvoiding https://github.com/michaeltyson/TPKeyboardAvoiding
 - ZipArchive https://github.com/ZipArchive/ZipArchive
 - AlecrimCoreData https://github.com/Alecrim/AlecrimCoreData
