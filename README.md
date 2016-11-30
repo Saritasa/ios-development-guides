@@ -4,11 +4,22 @@
 
 Let's use the apple's official api design guidelines https://swift.org/documentation/api-design-guidelines/
 
-## Swift Style Guidelines
+## Common Code Style Guidelines
 
 - enable "Automatically trim trailing whitespace" (Text Editing > Editing > While edititng)
 - 4 spaces, not tabs (Text Editing > Indentation)
+
+## Swift Style Guidelines
+
 - use `swiftlint` https://github.com/realm/SwiftLint (you can use [.swiftlint.yml](.swiftlint.yml) as basic template)
+
+## Objective-C Style Guidelines
+
+ - use literals. For example:
+`@123` instead of `[NSNumber numberWithInt:123]`
+`@(someFloatValue)` instead of `[NSNumber numberWithFloat:someFloatValue]`
+`@{key: value}` instead of `[NSDictionary dictionaryWithObjectsAndKeys: value, key, nil]`
+`@[object1, object2, object3]` instead of `[NSArray arrayWithObjects:object1, object2, object3, nil]`
 
 ## SonarQube Style Guidelines
 
