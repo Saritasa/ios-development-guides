@@ -6,20 +6,21 @@ Let's use the apple's official api design guidelines https://swift.org/documenta
 
 ## Common Code Style Guidelines
 
-- enable "Automatically trim trailing whitespace" (Text Editing > Editing > While edititng)
-- 4 spaces, not tabs (Text Editing > Indentation)
+Enable "Automatically trim trailing whitespace" (`Text Editing` `>` `Editing` `>` `While edititng`). Ensure that you use 4 spaces, not tabs (`Text Editing` `>` `Indentation`)
 
-## Swift Style Guidelines
+### For Swift
 
-- use `swiftlint` https://github.com/realm/SwiftLint (you can use [.swiftlint.yml](.swiftlint.yml) as basic template)
+Just use `swiftlint` https://github.com/realm/SwiftLint. Take a look at [.swiftlint.yml](.swiftlint.yml) as a basic template for a project.
 
-## Objective-C Style Guidelines
+### For Objective-C
 
- - use literals: <br>
-`@123` instead of `[NSNumber numberWithInt:123]` <br>
-`@(someFloatValue)` instead of `[NSNumber numberWithFloat:someFloatValue]` <br>
-`@{key: value}` instead of `[NSDictionary dictionaryWithObjectsAndKeys: value, key, nil]` <br>
-`@[object1, object2, object3]` instead of `[NSArray arrayWithObjects:object1, object2, object3, nil]` <br>
+Let's use NYTimes style guide https://github.com/NYTimes/objective-c-style-guide.
+
+Don't forget that literals exist:
+- `@123` instead of `[NSNumber numberWithInt:123]`
+- `@(someFloatValue)` instead of `[NSNumber numberWithFloat:someFloatValue]`
+- `@{key: value}` instead of `[NSDictionary dictionaryWithObjectsAndKeys: value, key, nil]`
+- `@[object1, object2, object3]` instead of `[NSArray arrayWithObjects:object1, object2, object3, nil]`
 
 ## SonarQube Style Guidelines
 
