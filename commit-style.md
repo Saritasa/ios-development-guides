@@ -9,6 +9,7 @@
 6. Do not end the subject line with a period
 7. Use the body for explain what and why vs. how.
 8. If you have made a mistake in your commit message, you can fix it using the command git commit --amend
+9. Make often little commits instead of rarely large commits. It's better two commits with messages "Fix bug on login screen" and "Fix crash on the main screen" then one commit with a message "Fix two bugs".
 
 ### Examples
 ```
