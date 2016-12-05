@@ -39,12 +39,12 @@ Don't save commented code in your files. You can use Version Editor in Xcode to 
 
 ```
 .
-└── Application
-    └── (xcodeproj, xcworkspace and other project files)
-└── Artifacts
-    └── (certificates and other files)
-    └── Provisioning
-        └── (Provisioning profiles)
+├── Application
+│    └── (xcodeproj, xcworkspace and other project files)
+├── Artifacts
+│   ├── (certificates and other files)
+│   └── Provisioning
+│       └── (Provisioning profiles)
 └── README.md
 ```
 
