@@ -1,5 +1,27 @@
 
-# Commit Style
+# Work with Git
+
+We are adapting git flow on all our projects. SourceTree supports it out of the box but you can use it in your terminal too. Two main branches are `develop` and `master`, create additional, for example `stage` if you have needs. `develop` is for development, `master` is for tagged releases (AppStore/TestFlight or internal releases).
+
+Please work in `feature/` branches if you anticipate that a feature can take more than one commit. We are using the following naming convention for feature branches:
+```
+feature/#{task-id}-{short-description}
+```
+Examples:
+```
+feature/#A-12-ui-for-module
+feature/#89338-add-autograph-library
+```
+
+If you work on a fix or a small feature that will take only one commit there is no need to create a separate branch for that. In that case please add an id of the task that you are working on to the commit message, it will be easier to understand and search by task id. Examples:
+```
+Add user login functionality #65343
+Document domain assebmly #TRU-45
+```
+> Note: Some projects that work with Jira require `Task: #{task id}` to be the __last line__ of the commit message.
+
+
+## Commit Style
 
 1. Please, try to keep about 50 letters in the subject
 2. Use Imperative mood for verbs (i.e. Add, Fix, Change, Refactor, Revert etc)
