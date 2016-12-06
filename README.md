@@ -31,7 +31,7 @@ Don't forget about SonarQube properties. We should add to exclusions:
 
 Let's use swift community best practices https://github.com/schwa/Swift-Community-Best-Practices
 
-Also take a look at our [commit style](commit-style.md)
+Also take a look how we [work with git](work-with-git.md)
 
 Don't save commented code in your files. You can use Version Editor in Xcode to see the file's history.
 
