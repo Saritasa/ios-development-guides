@@ -21,7 +21,7 @@ Document domain assebmly #TRU-45
 > Note: Some projects that work with Jira require `Task: #{task id}` to be the __last line__ of the commit message.
 
 
-## Commit Style
+## Commit Style Rules
 
 1. Please, try to keep about 50 letters in the subject
 2. Use Imperative mood for verbs (i.e. Add, Fix, Change, Refactor, Revert etc)
