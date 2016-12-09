@@ -31,10 +31,6 @@ Don't forget about SonarQube properties. We should add to exclusions:
 
 Let's use swift community best practices https://github.com/schwa/Swift-Community-Best-Practices
 
-Use correct format for version of an app and build number
-
-![](build-number.png)
-
 Also take a look how we [work with git](work-with-git.md)
 
 Don't save commented code in your files. You can use Version Editor in Xcode to see the file's history.
@@ -57,6 +53,10 @@ Don't save commented code in your files. You can use Version Editor in Xcode to 
 Don't use targets to configure environment of an application, use configurations and schemes instead. By default any project already contains `Debug` and `Release` configurations. Create additional configurations, for example: `Debug.Prod`, `Release.Prod`, `AppStore.Prod`. Add additional schemes: `Prod`, `AppStore` and setup correct configurations for `Build`, `Run`, `Test`, `Profile`, `Analyze`, `Archive`. Then you can add user-defined settings (Build Settings > Add User-Defined Setting) and use them in info.plist file, for example: `APP_ENV = dev` is user-defined setting you can use it in info.plist as `$(APP_ENV)`.
 
 ## Xcode Project Structure
+
+Version of an app should have the following format: `{major}.{minor}.{patch}`, build number is just an integer.
+
+![](build-number.png)
 
 Separate project by modules, for example `Login`, `Settings`, etc. For each module create a folder in a file system and add it to the xcode project, that way when you add files in this category using xcode the files by default will go in correct folder in a file system. Place all xib and sotryboards files and classes related to a module together.
 
