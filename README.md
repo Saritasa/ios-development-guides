@@ -75,3 +75,4 @@ Don't use autolayout to postition views inside a scroll view in a xib or a story
 - ZipArchive https://github.com/ZipArchive/ZipArchive
 - AlecrimCoreData https://github.com/Alecrim/AlecrimCoreData
 - MBProgressHUD https://github.com/matej/MBProgressHUD
+- SDWebImage https://github.com/rs/SDWebImage
