@@ -1,7 +1,7 @@
 
 # Work with Git
 
-We are adapting git flow on all our projects. SourceTree supports it out of the box but you can use it in your terminal too. Two main branches are `develop` and `master`, create additional, for example `stage` if you have needs. `develop` is for development, `master` is for tagged releases (AppStore/TestFlight or internal releases).
+We are adapting git flow on all our projects. SourceTree supports it out of the box but you can use it in your terminal too. Two main branches are `develop` and `master`, create additional, for example `stage` if you have needs. `develop` is for development, `master` is for tagged releases (AppStore/TestFlight or internal releases). Tagged releases should have a tag using format: `{major}.{minor}.{patch}({build number})` and should correspond to `CFBundleShortVersionString` and `CFBundleVersion` values in `info.plist` file respectively.
 
 Please work in `feature/` branches if you anticipate that a feature can take more than one commit. We are using the following naming convention for feature branches:
 ```
