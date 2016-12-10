@@ -54,6 +54,10 @@ Don't use targets to configure environment of an application, use configurations
 
 ## Xcode Project Structure
 
+Version of an app should have the following format: `{major}.{minor}.{patch}`, build number is just an integer.
+
+![](build-number.png)
+
 Separate project by modules, for example `Login`, `Settings`, etc. For each module create a folder in a file system and add it to the xcode project, that way when you add files in this category using xcode the files by default will go in correct folder in a file system. Place all xib and sotryboards files and classes related to a module together.
 
 You can place common files/classes that are used by many modules in separate folder/category. It's often the case for models.
