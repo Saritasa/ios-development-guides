@@ -31,7 +31,7 @@ Don't forget about SonarQube properties. We should add to exclusions:
 
 Let's use swift community best practices https://github.com/schwa/Swift-Community-Best-Practices
 
-Also take a look at our [commit style](commit-style.md)
+Also take a look how we [work with git](work-with-git.md)
 
 Don't save commented code in your files. You can use Version Editor in Xcode to see the file's history.
 
@@ -39,12 +39,12 @@ Don't save commented code in your files. You can use Version Editor in Xcode to 
 
 ```
 .
-└── Application
-    └── (xcodeproj, xcworkspace and other project files)
-└── Artifacts
-    └── (certificates and other files)
-    └── Provisioning
-        └── (Provisioning profiles)
+├── Application
+│   └── (xcodeproj, xcworkspace and other project files)
+├── Artifacts
+│   ├── (certificates and other files)
+│   └── Provisioning
+│       └── (Provisioning profiles)
 └── README.md
 ```
 
@@ -53,6 +53,10 @@ Don't save commented code in your files. You can use Version Editor in Xcode to 
 Don't use targets to configure environment of an application, use configurations and schemes instead. By default any project already contains `Debug` and `Release` configurations. Create additional configurations, for example: `Debug.Prod`, `Release.Prod`, `AppStore.Prod`. Add additional schemes: `Prod`, `AppStore` and setup correct configurations for `Build`, `Run`, `Test`, `Profile`, `Analyze`, `Archive`. Then you can add user-defined settings (Build Settings > Add User-Defined Setting) and use them in info.plist file, for example: `APP_ENV = dev` is user-defined setting you can use it in info.plist as `$(APP_ENV)`.
 
 ## Xcode Project Structure
+
+Version of an app should have the following format: `{major}.{minor}.{patch}`, build number is just an integer.
+
+![](build-number.png)
 
 Separate project by modules, for example `Login`, `Settings`, etc. For each module create a folder in a file system and add it to the xcode project, that way when you add files in this category using xcode the files by default will go in correct folder in a file system. Place all xib and sotryboards files and classes related to a module together.
 
@@ -75,3 +79,4 @@ Don't use autolayout to postition views inside a scroll view in a xib or a story
 - ZipArchive https://github.com/ZipArchive/ZipArchive
 - AlecrimCoreData https://github.com/Alecrim/AlecrimCoreData
 - MBProgressHUD https://github.com/matej/MBProgressHUD
+- SDWebImage https://github.com/rs/SDWebImage
