@@ -1,32 +1,46 @@
-disabled_rules: # rule identifiers to exclude from running
+disabled_rules:
   - force_cast
-  - trailing_whitespace
   - line_length
-  - variable_name
-  - valid_docs
+#  - vertical_whitespace # Should be enabled on new projects. BUT! Can cause a lot of warning on old projects with legacy code
+#  - trailing_whitespace # Should be enabled on new projects. BUT! Can cause a lot of warnings too. Can reduce file size. You can set it to be automatically managed in Xcode -> Preferences -> Text editing -> [v] Automatically trim trailing whitespace
 
-opt_in_rules: # some rules are only opt-in
-  - missing_docs
+opt_in_rules:
+  - closure_end_indentation
+  - explicit_init
+  - overridden_super_call
+  - prohibited_super_call 
+  - redundant_nil_coalescing
+  - closure_spacing  
+  - operator_usage_whitespace
+  - empty_count # prefer .isEmpty over .count > 0
+  - first_where # .first(where:) over .filter().first
+  - private_outlet # great rule. all outlets in views should be private, if possible
+  - object_literal # typesafe, clear uiimage(named:), uicolor()
+#  - file_header # - this should be used when we need file headers of one-type (copyright, date, other info)
 
-excluded: # paths to ignore during linting. Takes precedence over `included`.
+excluded:
   - Pods
-
-file_length:
-  warning: 1000
-  error: 10000
+# Optional: Generated files
+# - Generated 
 
 # rules configuration
+file_length:
+  - 500
+  - 2500
 type_body_length:
-  - 1000 # warning
-  - 2000 # error
-force_try: warning
+  - 750 # warning
+  - 1500 # error
+# force_try: warning
 function_body_length:
-  - 300 # warning
-  - 500 # error
+  - 200 # warning
+  - 400 # error
 function_parameter_count:
-  - 20 # warning
-  - 30 # error
+  - 6 # warning
+  - 10 # error
 cyclomatic_complexity:
-  - 30 # warning
-  - 50 # error
-
+  - 20 # warning
+  - 40 # error
+shorthand_operator: warning
+large_tuple: 
+  - 3 # warning
+  - 5 # error
