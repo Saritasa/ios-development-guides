@@ -35,6 +35,13 @@ Also take a look how we [work with git](work-with-git.md)
 
 Don't save commented code in your files. You can use Version Editor in Xcode to see the file's history.
 
+## Geolocation Recommendations
+
+ - Presentation: https://my.visme.co/projects/pv07yg0e-background-location-tracking-ios
+ - Don't use geolocation permanently. We should stop updating geolocation after recieving a location.
+ - See example in the file `Location Tracking.zip`
+
+
 ## Project Folder Structure
 
 ```
