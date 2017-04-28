@@ -77,6 +77,9 @@ Prefer to not place all views in one big view or view controller, separate them 
 
 Don't use autolayout to postition views inside a scroll view in a xib or a storyboard. It's very buggy, hard to change and understand. For such cases you should layout views manually or use a stack view or a table view instead.
 
+## Presentations from team talks
+- [Reactiveness, Rx, RAC](https://speakerdeck.com/agapovone/reactive-talk)
+
 ## Libraries and Frameworks We Use
 
 - Alamofire for swift projects https://github.com/Alamofire/Alamofire
