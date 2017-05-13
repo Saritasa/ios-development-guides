@@ -79,6 +79,7 @@ Don't use autolayout to postition views inside a scroll view in a xib or a story
 
 ## Presentations from team talks
 - [Reactiveness, Rx, RAC](https://speakerdeck.com/agapovone/reactive-talk)
+- [Auto-renewable subscriptions and integration with a backend (+ FP parts)](https://docs.google.com/presentation/d/18lSwwCSm2yEeUY4hRoPGSVCL4C7FjQEia6nQZOXcons/edit?usp=sharing)
 
 ## Libraries and Frameworks We Use
 
