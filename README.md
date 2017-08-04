@@ -92,4 +92,8 @@ Don't use autolayout to postition views inside a scroll view in a xib or a story
 - ZipArchive https://github.com/ZipArchive/ZipArchive
 - AlecrimCoreData https://github.com/Alecrim/AlecrimCoreData
 - MBProgressHUD https://github.com/matej/MBProgressHUD
+- SVProgressHUD https://github.com/SVProgressHUD/SVProgressHUD
 - SDWebImage https://github.com/rs/SDWebImage
+- IFTTTLaunchImage https://github.com/IFTTT/IFTTTLaunchImage
+- Spring https://github.com/MengTo/Spring/tree/master/Spring (for nice animations in UI)
+- SwiftMessages https://github.com/SwiftKickMobile/SwiftMessages
