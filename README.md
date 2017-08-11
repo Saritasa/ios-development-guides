@@ -82,10 +82,15 @@ Don't use autolayout to postition views inside a scroll view in a xib or a story
 - [Auto-renewable subscriptions and integration with a backend (+ FP parts)](https://docs.google.com/presentation/d/18lSwwCSm2yEeUY4hRoPGSVCL4C7FjQEia6nQZOXcons/edit?usp=sharing)
 - [ARKit](https://speakerdeck.com/agapovone/arkit)
 - [Universal Links](https://speakerdeck.com/agapovone/universal-links)
+- [Moya](https://speakerdeck.com/agapovone/moya)
+
+## Demo projects from team talks
+- [MVVM, RxSwift, Moya, Marshal](https://github.com/AgapovOne/Ballabbble)
 
 ## Libraries and Frameworks We Use
 
 - Alamofire for swift projects https://github.com/Alamofire/Alamofire
+- Moya (api manager based on alamofire) https://github.com/Moya/Moya
 - AFNetworking for objective-c projects https://github.com/AFNetworking/AFNetworking
 - SwiftyJSON https://github.com/SwiftyJSON/SwiftyJSON
 - TPKeyboardAvoiding https://github.com/michaeltyson/TPKeyboardAvoiding
@@ -94,6 +99,7 @@ Don't use autolayout to postition views inside a scroll view in a xib or a story
 - MBProgressHUD https://github.com/matej/MBProgressHUD
 - SVProgressHUD https://github.com/SVProgressHUD/SVProgressHUD
 - SDWebImage https://github.com/rs/SDWebImage
+- Kingfisher (SDWebImage Swift alternative) https://github.com/onevcat/Kingfisher
 - IFTTTLaunchImage https://github.com/IFTTT/IFTTTLaunchImage
 - Spring https://github.com/MengTo/Spring/tree/master/Spring (for nice animations in UI)
 - SwiftMessages https://github.com/SwiftKickMobile/SwiftMessages
