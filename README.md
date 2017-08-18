@@ -83,6 +83,7 @@ Don't use autolayout to postition views inside a scroll view in a xib or a story
 - [ARKit](https://speakerdeck.com/agapovone/arkit)
 - [Universal Links](https://speakerdeck.com/agapovone/universal-links)
 - [Moya](https://speakerdeck.com/agapovone/moya)
+- [MVVM](https://speakerdeck.com/agapovone/mvvm)
 
 ## Demo projects from team talks
 - [MVVM, RxSwift, Moya, Marshal](https://github.com/AgapovOne/Ballabbble)
