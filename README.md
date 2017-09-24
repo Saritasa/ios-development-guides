@@ -1,6 +1,6 @@
-# iOS Development at Saritasa (Draft)
+# iOS Development at Saritasa
 
-### Topics list:
+### Topics:
 1. [Team Talks](Topics/Talks.md)
 	1. [Presentations](Topics/Talks.md#presentations)
 	1. [Demo](Topics/Talks.md#demos)

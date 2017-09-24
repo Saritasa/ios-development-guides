@@ -1,4 +1,4 @@
-##### Team talks presentations, demos and records
+## Team talks presentations, demos and records
 
 > [Home page](/README.md)
 
