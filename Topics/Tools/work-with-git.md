@@ -1,4 +1,3 @@
-
 # Work with Git
 
 We are adapting git flow on all our projects. SourceTree supports it out of the box but you can use it in your terminal too. Two main branches are `develop` and `master`, create additional, for example `stage` if you have needs. `develop` is for development, `master` is for tagged releases (AppStore/TestFlight or internal releases). Tagged releases should have a tag using format: `{major}.{minor}.{patch}({build number})` that should correspond to `CFBundleShortVersionString` and `CFBundleVersion` values in `info.plist` file respectively.
@@ -23,7 +22,7 @@ Document domain assebmly #TRU-45
 
 ## Commit Style Rules
 
-1. Please, try to keep about 50 letters in the subject
+1. Please, try to keep about __50 letters__ in the subject
 2. Use Imperative mood for verbs (i.e. Add, Fix, Change, Refactor, Revert etc)
 3. Use short but descriptive message
 4. Capitalize the subject line
