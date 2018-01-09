@@ -21,11 +21,10 @@ Lint with [swiftlint.yml](Development/.swiftlint.yml).
 	1. [Env configuration](Topics/Guidelines.md#xcode-project-environment-configuration)
 	1. [Build numbers](Topics/Guidelines.md#build-number)
 	1. [Autolayout](Topics/Guidelines.md#autolayout)
+1. [Distirbution of iOS apps 101](Topics/Distribution-101.md)
 1. [Tools](Topics/Tools.md)
 	1. [Git](Topics/Tools.md#git)
 	1. [Cocoapods](Topics/Tools.md#cocoapods)
 	1. [Swiftlint](Topics/Tools.md#swiftlint)
 1. [Libraries](Topics/Libraries.md)
 1. [Examples](Examples/)
-
-> Saritasa iOS Development team
