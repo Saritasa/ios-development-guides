@@ -7,8 +7,7 @@ By default each xcode project has two configurations `Debug` and `Release`, they
 Combination of App ID, Provisioning profile, entitlments and certificates is used to sign the app. To prepare a project for building on our Jenkins server we need:
 - a distribution certificate
 - an App ID (tied to a team)
-- a provisioning Profile (tied to distribution certificate and an App ID)
-Additionally if an app requires push notifications an App ID should be configured with Apple Push Notification service SSL Certificates: Development SSL Certificate for `Debug` builds and Production SSL Certificate for `Release` builds. Note: after enabling/disabling push notifications you should regenerate a provisioning profile.
+- a provisioning Profile (tied to distribution certificate and an App ID). Additionally if an app requires push notifications an App ID should be configured with Apple Push Notification service SSL Certificates: Development SSL Certificate for `Debug` builds and Production SSL Certificate for `Release` builds. Note: after enabling/disabling push notifications you should regenerate a provisioning profile.
 
 More informaiton about signing can be found in Apple documentation: [Maintaining Your Signing Identities and Certificates](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html)
 
