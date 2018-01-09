@@ -1,4 +1,4 @@
-## Distirbution of iOS apps 101
+## Distribution of iOS apps 101
 
 > There are some misunderstandings related to distirbution of iOS apps, I'm trying to clarify signing process in this short article.
 
