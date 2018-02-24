@@ -39,6 +39,10 @@ For different releases in crashlytics you can add any word into `{patch}`
 
 ![](resources/build-number.png)
 
+### Optimizing build times
+
+Use [this repo](https://github.com/fastred/Optimizing-Swift-Build-Times) for last information about optimization
+
 ### Autolayout
 
 Use autolayout for relatively static content. If content is very dynamic consider to manually caluclate and set sizes and frames of views (`UIView.layoutSubviews` and `UIViewController.viewDidLayoutSubviews` is the best place for this)
@@ -52,5 +56,7 @@ Don't use autolayout to postition views inside a scroll view in a xib or a story
  - [Presentation for reference](https://my.visme.co/projects/pv07yg0e-background-location-tracking-ios)
  - Don't use geolocation permanently. We should stop updating geolocation after recieving a location.
  - See example in the file [`Location Tracking.zip`](Talks/Presentations/Location%20Tracking.zip)
+
+
 
 > [Home page](/README.md)
