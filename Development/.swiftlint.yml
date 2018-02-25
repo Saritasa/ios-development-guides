@@ -15,7 +15,6 @@ opt_in_rules:
   - operator_usage_whitespace
   - empty_count # prefer .isEmpty over .count > 0
   - first_where # .first(where:) over .filter().first
-  - object_literal # typesafe, clear uiimage(named:), uicolor()
   - contains_over_first_not_nil # .contains > .first(where:) != nil
   - array_init # Array() is optimized. arr.map({ $0 }) is not
   - sorted_first_last # .min/max preferred to .sorted().first/last
