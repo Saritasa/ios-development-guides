@@ -7,7 +7,6 @@
 - [Alamofire](https://github.com/Alamofire/Alamofire) - for swift projects
 - [Moya](https://github.com/Moya/Moya) - api manager based on alamofire
 - [AFNetworking](https://github.com/AFNetworking/AFNetworking) -  for Objective-C projects
-- [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON)
 
 ### UI
 - [TPKeyboardAvoiding](https://github.com/michaeltyson/TPKeyboardAvoiding) - keyboard manipulation
