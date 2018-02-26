@@ -45,11 +45,10 @@ Use [this repo](https://github.com/fastred/Optimizing-Swift-Build-Times) for las
 
 ### Autolayout
 
-Use autolayout for relatively static content. If content is very dynamic consider to manually caluclate and set sizes and frames of views (`UIView.layoutSubviews` and `UIViewController.viewDidLayoutSubviews` is the best place for this)
+Nowadays it's very hard to code without Autolayout, so use it. Be aware of `safeAreaLayoutGuide` when you layout your views from top to bottom.
+For custom views you can override `intrinsicContentSize` with `UIViewNoIntrinsicMetric` for one or both dimensions.
 
 Prefer to not place all views in one big view or view controller, separate them by functionality and move them in their own xib for future reusability.
-
-Don't use autolayout to postition views inside a scroll view in a xib or a storyboard. It's very buggy, hard to change and understand. For such cases you should layout views manually or use a stack view or a table view instead.
 
 ### Geolocation
 
