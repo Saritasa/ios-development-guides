@@ -1,7 +1,6 @@
 # Use `swiftlint autocorrect` for the first swiftlint run to remove simple warnings/errors
 
 disabled_rules:
-  - force_cast
 #  - vertical_whitespace # Should be enabled on new projects. BUT! Can cause a lot of warning on old projects with legacy code
 #  - trailing_whitespace # Should be enabled on new projects. BUT! Can cause a lot of warnings too. Can reduce file size. You can set it to be automatically managed in Xcode -> Preferences -> Text editing -> [v] Automatically trim trailing whitespace
 
@@ -43,7 +42,8 @@ file_length:
 type_body_length:
   - 750 # warning
   - 1500 # error
-# force_try: warning
+force_cast: warning
+force_try: warning
 function_body_length:
   - 200 # warning
   - 400 # error
