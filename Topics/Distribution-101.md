@@ -1,6 +1,6 @@
 ## Distribution of iOS apps 101
 
-> There are some misunderstandings related to distribution of iOS apps, I'm trying to clarify signing process in this short article.
+> There are some misunderstandings related to distribution of iOS apps, We're trying to clarify signing process in this short article.
 
 By default each Xcode project has two configurations `Debug` and `Release`, they have differences and you can create more configurations based on this two. `Debug` builds are only appropriate for debugging, i.e. run on a device from Xcode, they require development provisioning profiles. `Release` builds are for installing an app on a device, they should have either Ad Hoc, Enterprise or App Store provisioning profiles. With App Store profiles it's simple they are for submission to Test Flight/App Store. Ad Hoc and Enterprise profiles have differences: when creating Ad Hoc provisioning profile you should select devices that allow to install an app provisioned with this provisioning profile; Enterprise profiles are only available in enterprise accounts and allow to install an app on any device. Our company has an enterprise account to distribute builds to our test devices.
 
