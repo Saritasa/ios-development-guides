@@ -56,6 +56,8 @@ Prefer to not place all views in one big view or view controller, separate them 
  - Don't use geolocation permanently. We should stop updating geolocation after recieving a location.
  - See example in the file [`Location Tracking.zip`](Talks/Presentations/Location%20Tracking.zip)
 
+### Push Notifications
 
+Great guide on implementing push notifications is [this article](https://medium.com/flawless-app-stories/ios-remote-push-notifications-in-a-nutshell-d05f5ccac252)
 
 > [Home page](/README.md)
