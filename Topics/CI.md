@@ -49,8 +49,9 @@ There is fastlane installed into jenkins. You could use it to define any lane in
 
 Configurations:
 
-- [Increment build number from CI number](/Development/Fastfile)
-- [Increment build patch number (#.#.x)](/Development/Fastfile)
+- [Dev Beta/Staging Beta/Testflight release (with versioning plugin)](/Development/Fastfile)
+- [Increment build number from CI number (with versioning plugin)](/Development/Fastfile)
+- [Increment build patch number (#.#.x) (with versioning plugin)](/Development/Fastfile)
 
 Can be used in jenkins inside stage:
 
