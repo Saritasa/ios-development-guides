@@ -47,13 +47,23 @@ stage('sonarqube') { // 2. Scan with sonarqube rules
 
 There is fastlane installed into jenkins. You could use it to define any lane inside your project and run on CI.
 
-Configurations:
+To setup fastlane in project use
+
+```bash
+fastlane init
+# add plugins with
+fastlane add_plugin versioning
+```
+
+[Fastfile example]((/Development/Fastfile))
+
+Lanes:
 
 - [Dev Beta/Staging Beta/Testflight release (with versioning plugin)](/Development/Fastfile)
 - [Increment build number from CI number (with versioning plugin)](/Development/Fastfile)
 - [Increment build patch number (#.#.x) (with versioning plugin)](/Development/Fastfile)
 
-Can be used in jenkins inside stage:
+Can be used in Jenkins CI inside stage:
 
 ```groovy
 stage('fastlane lane') {
