@@ -18,6 +18,7 @@ if ENV['TARGET'] == 'staging'
   @configuration = ''
 elsif ENV['TARGET'] == 'testflight'
   @scheme = ''
+  @note = ''
   @configuration = ''
 end
 
@@ -45,6 +46,8 @@ platform :ios do
     if ENV['TARGET'] == 'testflight'
       testflight(
         ipa: IPA_PATH,
+        changelog: @note,
+        skip_waiting_for_build_processing: true, # we can skip waiting without notification about suceeded processing in iTunes Connect
       )
     else
       crashlytics(

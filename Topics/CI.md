@@ -55,7 +55,7 @@ fastlane init
 fastlane add_plugin versioning
 ```
 
-[Fastfile example]((/Development/Fastfile))
+[Fastfile example](/Development/Fastfile)
 
 Lanes:
 
