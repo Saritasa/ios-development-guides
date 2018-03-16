@@ -10,6 +10,7 @@ WORKSPACE = 'APP.xcworkspace'
 @scheme = '' # debug scheme
 @note = '' # Note for
 @configuration = '' # debug configuration
+@export_method = 'enterprise'
 # env variable could be received from Jenkins build params
 if ENV['TARGET'] == 'staging'
   #change if it's different env
@@ -20,6 +21,7 @@ elsif ENV['TARGET'] == 'testflight'
   @scheme = ''
   @note = ''
   @configuration = ''
+  @export_method = 'app-store'
 end
 
 # Configuration
@@ -40,7 +42,7 @@ platform :ios do
       scheme: @scheme,
       configuration: @configuration,
       output_name: IPA_PATH,
-      export_method: 'enterprise',
+      export_method: @export_method,
     )
     # Deploy
     if ENV['TARGET'] == 'testflight'
