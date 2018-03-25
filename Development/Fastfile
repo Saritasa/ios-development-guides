@@ -5,12 +5,13 @@
 IPA_PATH = 'APP.ipa'
 XCODEPROJ = './APP.xcodeproj'
 WORKSPACE = 'APP.xcworkspace'
+APPSTORE_APP_IDENTIFIER = 'com.APP_IDENTIFIER'
 
 # Variables
 @scheme = '' # debug scheme
 @note = '' # Note for
 @configuration = '' # debug configuration
-@export_method = 'enterprise'
+@export_method = 'enterprise' # default Crashlytics deployment method
 # env variable could be received from Jenkins build params
 if ENV['TARGET'] == 'staging'
   #change if it's different env
@@ -21,7 +22,7 @@ elsif ENV['TARGET'] == 'testflight'
   @scheme = ''
   @note = ''
   @configuration = ''
-  @export_method = 'app-store'
+  @export_method = 'app-store' # required for Testflight
 end
 
 # Configuration
@@ -49,7 +50,10 @@ platform :ios do
       testflight(
         ipa: IPA_PATH,
         changelog: @note,
-        skip_waiting_for_build_processing: true, # we can skip waiting without notification about suceeded processing in iTunes Connect
+        app_identifier: APPSTORE_APP_IDENTIFIER, # required for proper project identification
+        skip_waiting_for_build_processing: true, # we can skip waiting without notification about
+                                                 # suceeded processing in iTunes Connect.
+                                                 # Also that would free Jenkins queue from waiting.
       )
     else
       crashlytics(
