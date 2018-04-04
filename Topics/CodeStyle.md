@@ -6,7 +6,7 @@
 ### Common Code Style Guidelines
 
 - Enable "Automatically trim trailing whitespace" (`Text Editing` `>` `Editing` `>` `While edititng`). 
-- Ensure that you use 4 spaces, not tabs (`Text Editing` `>` `Indentation`)
+- Ensure that you use 2 spaces, not tabs (`Text Editing` `>` `Indentation`)
 
 ### Best Practices
 
