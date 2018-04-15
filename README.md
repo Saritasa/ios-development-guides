@@ -22,6 +22,7 @@ Lint with [swiftlint.yml](Development/.swiftlint.yml).
 	1. [Autolayout](Topics/Guidelines.md#autolayout)
 	1. [Optmizing build times](Topics/Guidelines.md#optimizing-build-times)
 	1. [Push Notifications](Topics/Guidelines.md#push-notifications)
+1. [Distribution of iOS apps 101](Topics/Distribution-101.md)
 1. [Tools](Topics/Tools.md)
 	1. [Git](Topics/Tools.md#git)
 	1. [Cocoapods](Topics/Tools.md#cocoapods)
@@ -31,5 +32,3 @@ Lint with [swiftlint.yml](Development/.swiftlint.yml).
 	1. [Fastlane](Topics/CI.md#fastlane)
 1. [Libraries](Topics/Libraries.md)
 1. [Examples](Examples/)
-
-> Saritasa iOS Development team
