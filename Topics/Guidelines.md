@@ -45,11 +45,10 @@ Use [this repo](https://github.com/fastred/Optimizing-Swift-Build-Times) for las
 
 ### Autolayout
 
-Use autolayout for relatively static content. If content is very dynamic consider to manually caluclate and set sizes and frames of views (`UIView.layoutSubviews` and `UIViewController.viewDidLayoutSubviews` is the best place for this)
+Nowadays it's very hard to code without Autolayout, so use it. Be aware of `safeAreaLayoutGuide` when you layout your views from top to bottom.
+For custom views you can override `intrinsicContentSize` with `UIViewNoIntrinsicMetric` for one or both dimensions.
 
 Prefer to not place all views in one big view or view controller, separate them by functionality and move them in their own xib for future reusability.
-
-Don't use autolayout to postition views inside a scroll view in a xib or a storyboard. It's very buggy, hard to change and understand. For such cases you should layout views manually or use a stack view or a table view instead.
 
 ### Geolocation
 
@@ -57,6 +56,8 @@ Don't use autolayout to postition views inside a scroll view in a xib or a story
  - Don't use geolocation permanently. We should stop updating geolocation after recieving a location.
  - See example in the file [`Location Tracking.zip`](Talks/Presentations/Location%20Tracking.zip)
 
+### Push Notifications
 
+Great guide on implementing push notifications is [this article](https://medium.com/flawless-app-stories/ios-remote-push-notifications-in-a-nutshell-d05f5ccac252)
 
 > [Home page](/README.md)
