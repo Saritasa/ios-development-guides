@@ -24,3 +24,4 @@ An App ID is a two-part string and consists of a Team ID and a bundle ID search 
 - price (Enterprise costs more)
 - distribution (Ape Store only for Developer, In House only for Enterprise)
 
+You can [compare memberships](https://developer.apple.com/support/compare-memberships/)
