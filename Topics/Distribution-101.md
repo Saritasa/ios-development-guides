@@ -18,3 +18,9 @@ More information about signing can be found in Apple documentation: [Maintaining
 A Bundle ID precisely identifies a single app, example: `com.example.awesomeapp`.
 
 An App ID is a two-part string and consists of a Team ID and a bundle ID search string, with a period (.) separating the two parts, example: `A1B2C3D4E5.com.example.awesomeapp`. You can read more about [App ID](https://developer.apple.com/library/content/documentation/General/Conceptual/DevPedia-CocoaCore/AppID.html).
+
+#### What is the difference between Developer and Enterprise program?
+
+- price (Enterprise costs more)
+- distribution (Ape Store only for Developer, In House only for Enterprise)
+
