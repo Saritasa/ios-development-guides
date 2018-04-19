@@ -31,4 +31,8 @@ Lint with [swiftlint.yml](Development/.swiftlint.yml).
 	1. [Jenkins](Topics/CI.md#jenkins)
 	1. [Fastlane](Topics/CI.md#fastlane)
 1. [Libraries](Topics/Libraries.md)
-1. [Examples](Examples/)
+1. [Examples](Examples/Examples.md)
+	1. [Closures](Examples/Examples.md#examples)
+	1. [Coordinators](Examples/Examples.md#examples)
+
+> Saritasa iOS Development team
