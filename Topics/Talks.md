@@ -3,7 +3,8 @@
 > [Home page](/README.md)
 
 ## Presentations
-- [Location Tracking](Presentations/Location%20Tracking.zip)
+
+- [Location Tracking](Talks/Presentations/Location%20Tracking.zip)
 - [UI Improvements](UI_improvements_presentation.key)
 - [Reactiveness, Rx, RAC](https://speakerdeck.com/agapovone/reactive-talk)
 - [Auto-renewable subscriptions and integration with a backend (+ FP parts)](https://docs.google.com/presentation/d/18lSwwCSm2yEeUY4hRoPGSVCL4C7FjQEia6nQZOXcons/edit?usp=sharing)
@@ -12,8 +13,10 @@
 - [Moya](https://speakerdeck.com/agapovone/moya)
 - [MVVM](https://speakerdeck.com/agapovone/mvvm)
 - [React Native](https://speakerdeck.com/agapovone/react-native-talk)
+- [Backgrounder app](Talks/apr23Meeting)
 
 ## Demos
+
 - [MVVM, RxSwift, Moya, Marshal](https://github.com/AgapovOne/Ballabbble)
 
 > [Home page](/README.md)
