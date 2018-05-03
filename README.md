@@ -35,4 +35,6 @@ Lint with [swiftlint.yml](Development/.swiftlint.yml).
 	1. [Closures](Examples/Examples.md#examples)
 	1. [Coordinators](Examples/Examples.md#examples)
 
+[SpecialBackgroundColorView](Development/Code/SpecialBackgroundColorView.swift) - used for cells when
+
 > Saritasa iOS Development team
