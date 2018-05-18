@@ -24,7 +24,7 @@ More information about signing can be found in Apple documentation: [Maintaining
 
 Every app needs to have **name**, **description** and **screens**.
 
-Also the client should add developer to developer.apple.com ~AND~ itunesconnect.apple.com.
+Also the client should add developer to developer.apple.com **AND** itunesconnect.apple.com.
 
 Developer Portal is required for Provisioning profiles, certificates, App ID.
 
