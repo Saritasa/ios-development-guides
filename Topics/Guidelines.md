@@ -30,6 +30,10 @@ You can place common files/classes that are used by many modules in separate fol
 
 Don't use targets to configure environment of an application, use configurations and schemes instead. By default any project already contains `Debug` and `Release` configurations. Create additional configurations, for example: `Debug.Prod`, `Release.Prod`, `AppStore.Prod`. Add additional schemes: `Prod`, `AppStore` and setup correct configurations for `Build`, `Run`, `Test`, `Profile`, `Analyze`, `Archive`. Then you can add user-defined settings (Build Settings > Add User-Defined Setting) and use them in info.plist file, for example: `APP_ENV = dev` is user-defined setting you can use it in info.plist as `$(APP_ENV)`.
 
+1. Add user-defined setting in 'Build Settings'
+2. Use it as SETTING: `$(SETTING)` in Info.plist
+3. Access it later in code: `let appEnv = Bundle.main.object(forInfoDictionaryKey: "APP_ENV") as? String`
+
 Best example -  API base url.
 
 ### Build number
