@@ -24,9 +24,9 @@ More information about signing can be found in Apple documentation: [Maintaining
 
 Every app needs to have **name**, **description** and **screens**.
 
-Also the client should add developer to developer.apple.com **AND** itunesconnect.apple.com.
+Also the client should add developer to [developer.apple.com](https://developer.apple.com/account) **AND** [itunesconnect.apple.com](https://itunesconnect.apple.com/).
 
-Developer Portal is required for Provisioning profiles, certificates, App ID.
+Developer Portal is required for Provisioning profiles, certificates, App ID (see FAQ below).
 
 iTunes Connect is needed to add an app, fill screens and description
 
@@ -34,11 +34,11 @@ Screens of 5.5" iPhone should be enough for iPhone only app. [More on screenshot
 
 > What to do in Developer Portal
 
-Create **App ID**, **Provisioning Profile**, **Certificates** (Developer, Distribution). Also create Apple Push Notifications Service Certificate if needed.
+Developer: create **App ID**, **Provisioning Profile**, **Certificates** (Developer, Distribution). Also create Apple Push Notifications Service Certificate if needed.
 
 > What to do in iTunes Connect
 
-Create a new app. Fill the data: **Company Name**, **App Name**, **Primary Language**, **Bundle ID** (choose from developer portal), **SKU** (might be bundle ID + company name)
+Developer/Client: Create a new app. Fill the data: **Company Name**, **App Name**, **Primary Language**, **Bundle ID** (choose from developer portal), **SKU** (might be bundle ID + company name)
 
 [Apple docs on iTunes Connect deployment](https://help.apple.com/itunes-connect/developer/?lang=en#/)
 
