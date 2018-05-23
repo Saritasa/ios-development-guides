@@ -22,13 +22,15 @@ More information about signing can be found in Apple documentation: [Maintaining
 
 > What to require from client?
 
-Every app needs to have **name**, **description** and **screens**.
-
-Also the client should add developer to [developer.apple.com](https://developer.apple.com/account) **AND** [itunesconnect.apple.com](https://itunesconnect.apple.com/).
+The main step is to create apple account. The client should add developer to [developer.apple.com](https://developer.apple.com/account) **AND** [itunesconnect.apple.com](https://itunesconnect.apple.com/).
 
 Developer Portal is required for Provisioning profiles, certificates, App ID (see FAQ below).
 
 iTunes Connect is needed to add an app, fill screens and description
+
+The client can provide us with his requisites or add our account as a member in his team. That way we can do everything else ourselves.
+
+Every app needs to have **name**, **description** and **screens**.
 
 Screens of 5.5" iPhone should be enough for iPhone only app. [More on screenshots](https://help.apple.com/itunes-connect/developer/?lang=en#/dev910472ff2)
 
