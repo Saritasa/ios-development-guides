@@ -28,6 +28,8 @@ Developer Portal is required for Provisioning profiles, certificates, App ID (se
 
 iTunes Connect is needed to add an app, fill screens and description
 
+Don't forget to sign up for [Apple Developer Program](https://developer.apple.com/programs/)
+
 The client can provide us with his requisites or add our account as a member in his team. That way we can do everything else ourselves.
 
 Every app needs to have **name**, **description** and **screens**.
