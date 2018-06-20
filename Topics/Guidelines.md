@@ -64,4 +64,9 @@ Prefer to not place all views in one big view or view controller, separate them 
 
 Great guide on implementing push notifications is [this article](https://medium.com/flawless-app-stories/ios-remote-push-notifications-in-a-nutshell-d05f5ccac252)
 
+Generate pem from p12:
+```
+openssl pkcs12 -in apns-dev-cert.p12 -out apns-dev-cert.pem -nodes -clcerts
+```
+
 > [Home page](/README.md)
