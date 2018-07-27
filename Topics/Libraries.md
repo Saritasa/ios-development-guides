@@ -15,6 +15,7 @@
 - [SwiftMessages](https://github.com/SwiftKickMobile/SwiftMessages)
 - [MBProgressHUD](https://github.com/matej/MBProgressHUD)
 - [SVProgressHUD](https://github.com/SVProgressHUD/SVProgressHUD)
+- [Validator](https://github.com/adamwaite/Validator) - Validations for UIKit, structs with predefined/custom rules
 
 ### Persistence
 - [ZipArchive](https://github.com/ZipArchive/ZipArchive)
