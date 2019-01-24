@@ -43,6 +43,18 @@ For different releases in crashlytics you can add any word into `{patch}`
 
 ![](resources/build-number.png)
 
+## Naming conventions for image assets
+
+- use prefixes, i.e. `bg` (background), `ic` (icon)
+- use `_` as a word separator
+- clear name. If an image belongs to a module, i.e. unique to a module, then we need to add the name of a module.
+
+Examples:
+- `ic_cancel`
+- `ic_pathway_questions_cancel`
+- `bg_dropdown`
+
+
 ## Optimizing build times
 
 Use [this repo](https://github.com/fastred/Optimizing-Swift-Build-Times) for last information about optimization
