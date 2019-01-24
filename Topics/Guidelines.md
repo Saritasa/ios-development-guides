@@ -15,10 +15,10 @@ You can place common files/classes that are used by many modules in separate fol
 │   └── (xcodeproj, xcworkspace and other project files)
 │   └── {Project name}
 │       └── (Module)
-│           └── (MVC/MVVM/VIPER files)
+│           └── (MVC/MVVM/VIPER files with xibs and storyboards)
 │       └── Commons
 │       └── Resources
-│           └── (Storyboards, Info, Configurations)
+│           └── (Fonts, Info, Configurations)
 ├── Artifacts
 │   ├── (certificates and other files)
 │   └── Provisioning
