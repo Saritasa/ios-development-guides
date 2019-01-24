@@ -37,4 +37,8 @@ Lint with [swiftlint.yml](Development/.swiftlint.yml).
 	1. [Closures](Examples/Examples.md#examples)
 	1. [Coordinators](Examples/Examples.md#examples)
 
+### Solved issues
+
+- `UITableViewCell` and `UICollectionViewCell` reset background color of their views on selection. This behaviour is not always desirable. We've found two solutions. First is override `backgroundColor` of a view and second is override `setSelected` and/or `setHighlighted` methods of a cell and manually set background colors there. See discussion in https://github.com/Saritasa/ios-development-guides/pull/43
+
 > Saritasa iOS Development team
