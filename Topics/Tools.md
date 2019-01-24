@@ -24,4 +24,10 @@ curl -O "https://raw.githubusercontent.com/Saritasa/ios-development-guides/maste
 
 Also Check out [Swift guidelines](CodeStyle.md#swift)
 
+## Other tools that might be useful
+
+- https://eject.herokuapp.com - converts xibs into code
+- https://www.charlesproxy.com - debug http requests
+- https://app.quicktype.io/ - fast JSON to Codable conversion
+
 > [Home page](/README.md)
