@@ -20,7 +20,7 @@ More information about signing can be found in Apple documentation: [Maintaining
 
 ## First version to App Store
 
-> What to require from client?
+### What to require from client?
 
 The main step is to create apple account. The client should add developer to [developer.apple.com](https://developer.apple.com/account) **AND** [itunesconnect.apple.com](https://itunesconnect.apple.com/).
 
@@ -36,17 +36,17 @@ Every app needs to have **name**, **description** and **screens**.
 
 Screens of 5.5" iPhone should be enough for iPhone only app. [More on screenshots](https://help.apple.com/itunes-connect/developer/?lang=en#/dev910472ff2)
 
-> What to do in Developer Portal
+### What to do in Developer Portal
 
 Developer: create **App ID**, **Provisioning Profile**, **Certificates** (Developer, Distribution). Also create Apple Push Notifications Service Certificate if needed.
 
-> What to do in iTunes Connect
+### What to do in iTunes Connect
 
 Developer/Client: Create a new app. Fill the data: **Company Name**, **App Name**, **Primary Language**, **Bundle ID** (choose from developer portal), **SKU** (might be bundle ID + company name)
 
 [Apple docs on iTunes Connect deployment](https://help.apple.com/itunes-connect/developer/?lang=en#/)
 
-> What to do in Xcode
+### What to do in Xcode
 
 You should have matched bundle ID as an app in App Store. Build it successfully, create profiles if needed.
 
@@ -59,17 +59,17 @@ The last steps in Xcode are:
 
 ## FAQ
 
-> What is the difference between Bundle ID and App ID?
+### What is the difference between Bundle ID and App ID?
 
 A Bundle ID precisely identifies a single app, example: `com.example.awesomeapp`.
 
 An App ID is a two-part string and consists of a Team ID and a bundle ID search string, with a period (.) separating the two parts, example: `A1B2C3D4E5.com.example.awesomeapp`. You can read more about [App ID](https://developer.apple.com/library/content/documentation/General/Conceptual/DevPedia-CocoaCore/AppID.html).
 
-> What is the difference between Developer and Enterprise program?
+### What is the difference between Developer and Enterprise program?
 
 - price (Enterprise costs more)
 - distribution (App Store only for Developer, In House only for Enterprise)
 
 You can [compare memberships](https://developer.apple.com/support/compare-memberships/)
 
-> [Home page](/README.md)
+### [Home page](/README.md)
