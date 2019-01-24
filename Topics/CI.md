@@ -1,5 +1,3 @@
-## Tools we use
----
 
 > [Home page](/README.md)
 
