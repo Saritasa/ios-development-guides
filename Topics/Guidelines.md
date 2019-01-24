@@ -36,31 +36,31 @@ Don't use targets to configure environment of an application, use configurations
 
 Best example -  API base url.
 
-### Build number
+## Build number
 
 Version of an app should have the following format: `{major}.{minor}.{patch}`, build number is just an integer.
 For different releases in crashlytics you can add any word into `{patch}`
 
 ![](resources/build-number.png)
 
-### Optimizing build times
+## Optimizing build times
 
 Use [this repo](https://github.com/fastred/Optimizing-Swift-Build-Times) for last information about optimization
 
-### Autolayout
+## Autolayout
 
 Nowadays it's very hard to code without Autolayout, so use it. Be aware of `safeAreaLayoutGuide` when you layout your views from top to bottom.
 For custom views you can override `intrinsicContentSize` with `UIViewNoIntrinsicMetric` for one or both dimensions.
 
 Prefer to not place all views in one big view or view controller, separate them by functionality and move them in their own xib for future reusability.
 
-### Geolocation
+## Geolocation
 
  - [Presentation for reference](https://my.visme.co/projects/pv07yg0e-background-location-tracking-ios)
  - Don't use geolocation permanently. We should stop updating geolocation after recieving a location.
  - See example in the file [`Location Tracking.zip`](Talks/Presentations/Location%20Tracking.zip)
 
-### Push Notifications
+## Push Notifications
 
 Great guide on implementing push notifications is [this article](https://medium.com/flawless-app-stories/ios-remote-push-notifications-in-a-nutshell-d05f5ccac252)
 
