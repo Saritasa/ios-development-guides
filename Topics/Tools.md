@@ -40,7 +40,7 @@ Don't forget to set permissions on this file by running `chmod 754 format.sh`.
 
 We use the following formatting options (in `.swiftformat` file):
 ```bash
-# Initial list of options was provided by running swiftlint with `--inferoptions`
+# Initial list of options was provided by running swiftformat with `--inferoptions`
 
 --binarygrouping none
 --closingparen same-line
