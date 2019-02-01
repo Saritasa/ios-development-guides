@@ -29,6 +29,7 @@ Lint with [swiftlint.yml](Development/.swiftlint.yml).
 	1. [Git](Topics/Tools.md#git)
 	1. [Cocoapods](Topics/Tools.md#cocoapods)
 	1. [Swiftlint](Topics/Tools.md#swiftlint)
+	1. [Swiftformat](Topics/Tools.md#swiftformat)
 1. [CI](Topics/CI.md)
 	1. [Jenkins](Topics/CI.md#jenkins)
 	1. [Fastlane](Topics/CI.md#fastlane)
