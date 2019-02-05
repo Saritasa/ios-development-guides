@@ -84,6 +84,10 @@ else
 fi
 ```
 
+> Note: if a file will be formatted it will be staged for the commit. This breaks a flow when you
+> want to make several commits with changes. So you can remove `git add "$line";` after running
+> swiftformat. This also allows to verify formatting before commiting to the repo.
+
 Also Check out [Swift guidelines](CodeStyle.md#swift)
 
 ## Other tools that might be useful
