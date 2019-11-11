@@ -62,7 +62,32 @@ You should change `--swiftversion` accordingly.
 
 After this setup you can run `./format.sh` periodically to format all files in a project.
 
-Also you can run `swiftformat` on each commit and only on files that you have changed by using
+### Run swiftformat on each build (recommended)
+
+Change `format.sh` to the following (replace you paths to the tool and config accordingly):
+
+```sh
+#!/usr/bin/env bash
+
+if ./Pods/SwiftFormat/CommandLineTool/swiftformat --version >/dev/null; then
+    git diff --diff-filter=d --name-only | grep -e '\(.*\).swift$' | while read line; do
+        ./Pods/SwiftFormat/CommandLineTool/swiftformat  --config .swiftformat "../${line}";
+    done
+fi
+```
+
+This script only formats swift files that have changed in git.
+
+Since xcode doesn't support normal integration with command line tools
+(such as formatters) you should be aware of the following issues:
+
+- always save a file before build, otherwise you may see a saving error "The document could not be
+saved. The file has been changed by another application." when you try to save a file next time.
+- after auto formatting is run on some files, the undo history for those files will be wiped out.
+
+### Run swiftformat using git hooks (deprecated)
+
+You can run `swiftformat` on each commit and only on files that you have changed by using
 pre-commit hook. In git hooks are always local so you need to convey other developers that you use
 them. To share hooks among the team of developers you can create `git-hooks` directory in the root
 of a repository and add all hooks there. Then you can point git to use this directory by running the
