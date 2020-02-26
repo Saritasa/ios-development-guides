@@ -17,6 +17,7 @@
 - [SVProgressHUD](https://github.com/SVProgressHUD/SVProgressHUD)
 - [Validator](https://github.com/adamwaite/Validator) - Validations for UIKit, structs with predefined/custom rules
 - [Reusable](https://github.com/AliSoftware/Reusable) - Convinient and type-safe way to initialize views and cells from xibs
+- [R.swift](https://github.com/mac-cain13/R.swift) - Type-safe way to use resources and not only
 
 ### Persistence
 - [ZipArchive](https://github.com/ZipArchive/ZipArchive)
