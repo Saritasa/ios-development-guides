@@ -19,6 +19,13 @@ Document domain assebmly #TRU-45
 ```
 > Note: Some projects that work with Jira require `Task: #{task id}` to be the __last line__ of the commit message.
 
+To merge feature branches please use `No fast-forward` option (`--no-ff` in terminal). It will
+always create merge commit which by default will contain branch name. This will help to track
+separate commits in the future if needed.
+
+> Note: in different Git GUI clients this option can be called differently, for example in 
+SourceTree it's called: `Create a commit event if merge resolved via fast-forward`
+
 
 ## Commit Style Rules
 
