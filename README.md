@@ -31,6 +31,7 @@ Lint with [swiftlint.yml](Development/.swiftlint.yml).
 	1. [Swiftlint](Topics/Tools.md#swiftlint)
 	1. [Swiftformat](Topics/Tools.md#swiftformat)
 1. [CI](Topics/CI.md)
+	1. [Firebase](Topics/CI.md#firebase)
 	1. [Jenkins](Topics/CI.md#jenkins)
 	1. [Fastlane](Topics/CI.md#fastlane)
 1. [Libraries](Topics/Libraries.md)
