@@ -17,7 +17,6 @@ If you work on a fix or a small feature that will take only one commit there is 
 Add user login functionality #65343
 Document domain assebmly #TRU-45
 ```
-> Note: Some projects that work with Jira require `Task: #{task id}` to be the __last line__ of the commit message.
 
 To merge feature branches please use `No fast-forward` option (`--no-ff` in terminal). It will
 always create merge commit which by default will contain branch name. This will help to track
