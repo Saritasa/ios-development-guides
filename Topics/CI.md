@@ -36,6 +36,7 @@ It will copy appropriate `GoogleService-Info.plist` and place it in
    want to track any changes to this file in git).
 7. Add newly created `GoogleService/GoogleService-Info.plist` file in the target. This file will be
    replaced by an actual file from `GoogleService/<bundle id>/GoogleService-Info.plist`.
+8. Add `$SRCROOT/GoogleService/GoogleService-Info.plist` in "Output Files" of the script.
 
 
 ## Jenkins
