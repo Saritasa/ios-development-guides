@@ -21,24 +21,24 @@ class Actor1: NSObject {
     override init() {
         super.init()
 
-        /// Emit some action in 1 sec
+        // Emit some action in 1 sec
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { [weak self] in
             self?.doSomething()
         }
 
-        /// Emit another action in 2 sec
+        // Emit another action in 2 sec
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) { [weak self] in
             self?.doSomethingWithValue(value: 1)
         }
     }
 
     private func doSomething() {
-        /// Call the appropriate delegate method
+        // Call the appropriate delegate method
         delegate?.actor1DidSomething(self)
     }
 
     private func doSomethingWithValue(value: Int) {
-        /// Call the appropriate delegate method
+        // Call the appropriate delegate method
         delegate?.actor1(self, didSomethingWithValue: value)
     }
 }
@@ -59,7 +59,7 @@ class Actor2: NSObject {
     override init() {
         super.init()
 
-        /// Emit the action in 3 sec
+        // Emit the action in 3 sec
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) { [weak self] in
             self?.doSomething()
         }
@@ -71,7 +71,7 @@ class Actor2: NSObject {
     }
 
     private func doSomething() {
-        /// Call the appropriate delegate method
+        // Call the appropriate delegate method
         delegate?.actor2DidSomething(self)
     }
 }
