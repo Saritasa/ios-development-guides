@@ -5,3 +5,4 @@
 
 - [Closures](Closures.playground)
 - [Coordinators](https://github.com/AndreyPanov/ApplicationCoordinator)
+- [Delegates](Delegates.playground)
