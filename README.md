@@ -34,7 +34,8 @@ Lint with [swiftlint.yml](Development/.swiftlint.yml).
 1. [Libraries](Topics/Libraries.md)
 1. [Examples](Examples/Examples.md)
 	1. [Closures](Examples/Examples.md#examples)
-	1. [Coordinators](Examples/Examples.md#examples)
+    1. [Coordinators](Examples/Examples.md#examples)
+    1. [Data source](Examples/Examples.md#examples)
     1. [Delegates](Examples/Examples.md#examples)
 
 ### Solved issues
