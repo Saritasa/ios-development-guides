@@ -14,6 +14,18 @@ Default [.gitignore](../.gitignore)
 1. Pods directory should be added to <code>.gitignore</code> file.
 2. Files <code>Podfile</code> and <code>Podfile.lock</code> should be added to Git index.
 
+## Mint
+Alternatively to Cocoapods, we can use [Mint](https://github.com/yonaskolb/Mint) tool for running Swift command-line tool packages (e.g SwiftLint, SwiftFormat, R.swift...). Install Mint tool and prepare `Mintfile` to define packages that should be used in your project. Mintfile should contain the list of used packages with fixed versions. Then use `mint bootstrap` to pre-install all packages from list.
+
+>Tip: See tags of each package to use it right. Otherwise, you can get the error during package installation. 
+
+Example of `Mintfile`:
+```
+realm/SwiftLint@0.42.0
+nicklockwood/SwiftFormat@0.47.10
+mac-cain13/R.swift@v5.3.1
+```
+
 ## SwiftLint
 Use [SwiftLint tool](https://github.com/realm/SwiftLint). Take a look at our latest [.swiftlint.yml](../Development/.swiftlint.yml) as a basic template for a project.
 
@@ -21,6 +33,35 @@ The fastest way to get a copy of the config:
 ```bash
 curl -O "https://raw.githubusercontent.com/Saritasa/ios-development-guides/master/Development/.swiftlint.yml"
 ```
+
+### Run SwiftLint for each build (recommended)
+
+You can lint your project on each build using following scripts.
+
+For Cocoapods:
+
+```sh
+#!/usr/bin/env bash
+
+if ./Pods/SwiftLint/swiftlint version >/dev/null; then
+    ./Pods/SwiftLint/swiftlint $1
+else
+    echo "warning: Apparently, there is no SwiftLint in the Pods directory"
+fi
+```
+
+For Mint:
+```sh
+#!/usr/bin/env bash
+
+if mint list | grep -q 'SwiftLint'; then
+    mint run swiftlint
+fi
+```
+
+Don't forget to set permissions on this file by running `chmod 754 lint.sh`.
+
+Add the new `Run Script Phase` on XCode project settings (`Build Phases` tab) and put it **before** `Compile Sources` phase. Then, write down the path to the script from the project folder, and that's it!
 
 ## swiftformat
 
@@ -64,8 +105,9 @@ After this setup you can run `./format.sh` periodically to format all files in a
 
 ### Run swiftformat on each build (recommended)
 
-Change `format.sh` to the following (replace you paths to the tool and config accordingly):
+Change `format.sh` to the following (replace you paths to the tool and config accordingly).
 
+For Cocoapods:
 ```sh
 #!/usr/bin/env bash
 
@@ -76,7 +118,20 @@ if ./Pods/SwiftFormat/CommandLineTool/swiftformat --version >/dev/null; then
 fi
 ```
 
+For Mint:
+```sh
+#!/usr/bin/env bash
+
+if mint list | grep -q 'SwiftFormat'; then
+    git diff --diff-filter=d --name-only | grep -e '\(.*\).swift$' | while read line; do
+        mint run swiftformat "../${line}";
+    done
+fi
+```
+
 This script only formats swift files that have changed in git.
+
+Add the new `Run Script Phase` on XCode project settings (`Build Phases` tab) and put it **before** `Compile Sources` phase. Then, write down the path to the script from the project folder, and that's it!
 
 Since xcode doesn't support normal integration with command line tools
 (such as formatters) you should be aware of the following issues:
