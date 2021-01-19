@@ -14,11 +14,18 @@ You can place common files/classes that are used by many modules in separate fol
 ├── Application
 │   └── (xcodeproj, xcworkspace and other project files)
 │   └── {Project name}
-│       └── (Module)
-│           └── (MVC/MVVM/VIPER files with xibs and storyboards)
-│       └── Commons
+│       └── APNS
+│       └── Common UI
+|       └── Extensions
+|       └── Network
+|       └── Coordination
+|       └── Utils
+│       └── Modules
+|           └── Common (for features, e.g. abstract controllers or base classes should be here)
+|           └── {Feature name}
+│               └── (MVC/MVVM/VIPER files with xibs and storyboards)
 │       └── Resources
-│           └── (Fonts, Info, Configurations)
+│           └── (Fonts, Info, Configurations, Asset catalogs)
 ├── Artifacts
 │   ├── (certificates and other files)
 │   └── Provisioning
