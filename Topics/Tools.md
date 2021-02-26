@@ -54,9 +54,7 @@ For Mint:
 ```sh
 #!/usr/bin/env bash
 
-if mint list | grep -q 'SwiftLint'; then
-    mint run swiftlint
-fi
+xcrun --sdk macosx mint run swiftlint
 ```
 
 Don't forget to set permissions on this file by running `chmod 754 lint.sh`.
@@ -65,47 +63,9 @@ Add the new `Run Script Phase` on XCode project settings (`Build Phases` tab) an
 
 ## swiftformat
 
-Swiftformat can be configured on a project in several ways. I believe the simplest way is to use
-a `format.sh` script in the project directory (replace `<project directory>` with actual
-directory):
-
-```bash
-#!/usr/bin/env bash
-
-swiftformat \
-    --config .swiftformat \
-    <project directory>/
-```
-
-Don't forget to set permissions on this file by running `chmod 754 format.sh`.
-
-We use the following formatting options (in `.swiftformat` file):
-```bash
-# Initial list of options was provided by running swiftformat with `--inferoptions`
-
---binarygrouping none
---closingparen same-line
---commas inline
---comments ignore
---decimalgrouping none
---hexgrouping none
---ifdef no-indent
---octalgrouping none
---patternlet hoist
---ranges no-space
---stripunusedargs closure-only
---wraparguments after-first
---wrapcollections before-first
---swiftversion 4.2
-```
-
-You should change `--swiftversion` accordingly.
-
-After this setup you can run `./format.sh` periodically to format all files in a project.
-
 ### Run swiftformat on each build (recommended)
 
-Change `format.sh` to the following (replace you paths to the tool and config accordingly).
+Create a `format.sh` script file (replace you paths to the tool and config accordingly).
 
 For Cocoapods:
 ```sh
@@ -113,7 +73,7 @@ For Cocoapods:
 
 if ./Pods/SwiftFormat/CommandLineTool/swiftformat --version >/dev/null; then
     git diff --diff-filter=d --name-only | grep -e '\(.*\).swift$' | while read line; do
-        ./Pods/SwiftFormat/CommandLineTool/swiftformat  --config .swiftformat "../${line}";
+        ./Pods/SwiftFormat/CommandLineTool/swiftformat  --exclude Pods --swiftversion 5.0 "${line}";
     done
 fi
 ```
@@ -122,16 +82,14 @@ For Mint:
 ```sh
 #!/usr/bin/env bash
 
-if mint list | grep -q 'SwiftFormat'; then
-    git diff --diff-filter=d --name-only | grep -e '\(.*\).swift$' | while read line; do
-        mint run swiftformat "../${line}";
-    done
-fi
+git diff --diff-filter=d --name-only | grep -e '\(.*\).swift$' | while read line; do
+    xcrun --sdk macosx mint run swiftformat --exclude Pods --swiftversion 5.0 "${line}";
+done
 ```
 
 This script only formats swift files that have changed in git.
 
-Add the new `Run Script Phase` on XCode project settings (`Build Phases` tab) and put it **before** `Compile Sources` phase. Then, write down the path to the script from the project folder, and that's it!
+Add the new `Run Script Phase` in XCode project settings (`Build Phases` tab) and put it **before** `Compile Sources` phase. Then, write down the path to the script from the project folder, and that's it!
 
 Since xcode doesn't support normal integration with command line tools
 (such as formatters) you should be aware of the following issues:
